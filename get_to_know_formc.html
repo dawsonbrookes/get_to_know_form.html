@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to Know Tech Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1, h2 {
+            color: #008080;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333333;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        input[type="submit"] {
+            width: auto;
+            background-color: #008080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #00ced1;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .signature {
+            font-size: 14px;
+            color: #005b96;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get to Know Tech Form</h1>
+    <form action="https://your-server-endpoint" method="post">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="placeOfBirth">Place of Birth:</label>
+        <input type="text" id="placeOfBirth" name="placeOfBirth" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="currentLocation">Current Location:</label>
+        <input type="text" id="currentLocation" name="currentLocation" required>
+
+        <h2>Language Skills</h2>
+        <label for="languagesSpoken">Languages Spoken:</label>
+        <input type="text" id="languagesSpoken" name="languagesSpoken" required>
+
+        <h2>Technical Skills</h2>
+        <label for="computerLanguages">Computer Languages Known:</label>
+        <input type="text" id="computerLanguages" name="computerLanguages" required>
+
+        <label for="experienceLevel">Experience Level:</label>
+        <select id="experienceLevel" name="experienceLevel">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+        <label for="frameworksLibraries">Frameworks and Libraries:</label>
+        <input type="text" id="frameworksLibraries" name="frameworksLibraries">
+
+        <label for="toolsSoftware">Tools and Software:</label>
+        <input type="text" id="toolsSoftware" name="toolsSoftware">
+
+        <label for="certifications">Certifications and Courses Completed:</label>
+        <input type="text" id="certifications" name="certifications">
+
+        <h2>Professional Experience</h2>
+        <label for="jobTitle">Current Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
+
+        <label for="yearsExperience">Years of Experience:</label>
+        <input type="number" id="yearsExperience" name="yearsExperience" required>
+
+        <label for="previousRoles">Previous Roles and Responsibilities:</label>
+        <textarea id="previousRoles" name="previousRoles" rows="4"></textarea>
+
+        <h2>Projects and Interests</h2>
+        <label for="notableProjects">Notable Projects:</label>
+        <textarea id="notableProjects" name="notableProjects" rows="4"></textarea>
+
+        <label for="areasInterest">Areas of Interest:</label>
+        <textarea id="areasInterest" name="areasInterest" rows="4"></textarea>
+
+        <label for="futureGoals">Future Goals:</label>
+        <textarea id="futureGoals" name="futureGoals" rows="4"></textarea>
+
+        <h2>Additional Information</h2>
+        <label for="linkedin">LinkedIn Profile:</label>
+        <input type="url" id="linkedin" name="linkedin">
+
+        <label for="github">GitHub Profile:</label>
+        <input type="url" id="github" name="github">
+
+        <label for="personalWebsite">Personal Website/Portfolio:</label>
+        <input type="url" id="personalWebsite" name="personalWebsite">
+
+        <label for="additionalInfo">Anything Else You’d Like to Share:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+
+        <div class="form-footer">
+            <input type="submit" value="Submit">
+            <div class="signature">Dedah Brookes 2024</div>
+        </div>
+    </form>
+</body>
+</html>
